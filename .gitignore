@@ -1,0 +1,12 @@
+# Visual Studio 2013
+
+*.suo
+
+# Build results
+
+*.suo
+BeginnerUI/bin/
+BeginnerUI/obj/
+BeginnerUI.UnitTests/bin/
+BeginnerUI.UnitTests/obj/
+
