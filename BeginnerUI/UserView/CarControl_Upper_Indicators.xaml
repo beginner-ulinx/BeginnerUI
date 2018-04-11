@@ -1,0 +1,45 @@
+﻿<UserControl x:Class="BeginnerUI.UserView.CarControl_Upper_Indicators"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             mc:Ignorable="d" 
+             Width="auto"
+             Height="auto">
+    <UserControl.Resources>
+        <Style TargetType="{x:Type TextBlock}" x:Key="Indicator">
+            <Setter Property="Margin" Value="5,5,10,10" />
+            <Setter Property="Foreground" Value="White" />
+            <Setter Property="FontWeight" Value="ExtraBold" />
+            <Setter Property="FontSize" Value="30" />
+        </Style>
+        <Style TargetType="{x:Type TextBlock}" x:Key="Number">
+            <Setter Property="Margin" Value="5,5,10,10" />
+            <Setter Property="Foreground" Value="Yellow" />
+            <Setter Property="FontWeight" Value="ExtraBold" />
+            <Setter Property="FontSize" Value="28" />
+        </Style>
+    </UserControl.Resources>
+    <Grid Background="#2a2a2a">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="auto"/>
+            <RowDefinition Height="auto"/>
+        </Grid.RowDefinitions>
+        <StackPanel Grid.Row="0" Grid.Column="0" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource Indicator}" Text="時間"  />
+            <TextBlock Name="GPS_Time" Style="{StaticResource Number}" Text="2016-07-19 19:12:56"  />
+            <TextBlock Style="{StaticResource Indicator}" Text="天線俯仰角"  />
+            <TextBlock Name="Pitch_Angle" Style="{StaticResource Number}" Text="0.00"  />
+            <TextBlock Style="{StaticResource Indicator}" Text="傾斜角"  />
+            <TextBlock Name="Title_Angle" Style="{StaticResource Number}" Text="0.00"  />
+        </StackPanel>
+        <StackPanel Grid.Row="1"  Grid.Column="0" Orientation="Horizontal">
+            <TextBlock Style="{StaticResource Indicator}" Text="緯度"  />
+            <TextBlock Name="Latitude" Style="{StaticResource Number}" Text="N25 05'36.898"  />
+            <TextBlock Style="{StaticResource Indicator}" Text="經度"  />
+            <TextBlock Name="Longitude" Style="{StaticResource Number}" Text="N25 05'36.898"  />
+            <TextBlock Style="{StaticResource Indicator}" Text="高程"  />
+            <TextBlock Name="Car_Height" Style="{StaticResource Number}" Text="0.00"  />
+        </StackPanel>
+    </Grid>
+</UserControl>

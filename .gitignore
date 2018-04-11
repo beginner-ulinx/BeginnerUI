@@ -10,3 +10,7 @@ BeginnerUI/obj/
 BeginnerUI.UnitTests/bin/
 BeginnerUI.UnitTests/obj/
 
+#Circular Gauge
+CircularGauge/bin/
+CircularGauge/obj/
+

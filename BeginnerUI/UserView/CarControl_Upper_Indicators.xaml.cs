@@ -16,11 +16,11 @@ using System.Windows.Shapes;
 namespace BeginnerUI.UserView
 {
     /// <summary>
-    /// Interaction logic for CarControl.xaml
+    /// Interaction logic for CarControl_Upper_Indicators.xaml
     /// </summary>
-    public partial class CarControl : UserControl
+    public partial class CarControl_Upper_Indicators : UserControl
     {
-        public CarControl()
+        public CarControl_Upper_Indicators()
         {
             InitializeComponent();
         }

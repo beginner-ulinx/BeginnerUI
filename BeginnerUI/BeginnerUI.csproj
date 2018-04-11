@@ -53,8 +53,17 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="UserView\CarControl.xaml.cs">
-      <DependentUpon>CarControl.xaml</DependentUpon>
+    <Compile Include="UserView\CarControl_Dashboard.xaml.cs">
+      <DependentUpon>CarControl_Dashboard.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\CarControl_Bottom_FuncKey.xaml.cs">
+      <DependentUpon>CarControl_Bottom_FuncKey.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\CarControl_Middle_Indicators.xaml.cs">
+      <DependentUpon>CarControl_Middle_Indicators.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="UserView\CarControl_Upper_Indicators.xaml.cs">
+      <DependentUpon>CarControl_Upper_Indicators.xaml</DependentUpon>
     </Compile>
     <Compile Include="Utility\CustomCommand.cs" />
     <Compile Include="Utility\DateConverter.cs" />
@@ -71,7 +80,19 @@
       <DependentUpon>MainWindow.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="UserView\CarControl.xaml">
+    <Page Include="UserView\CarControl_Dashboard.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserView\CarControl_Bottom_FuncKey.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserView\CarControl_Middle_Indicators.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="UserView\CarControl_Upper_Indicators.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -107,6 +128,30 @@
   <ItemGroup>
     <Folder Include="Model\" />
     <Folder Include="ViewModel\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\CircularGauge\CircularGauge.csproj">
+      <Project>{6efd5895-177b-4bbb-af52-29f4d53b3fbd}</Project>
+      <Name>CircularGauge</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\compass.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\auto_rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\hand_rotate.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\pulse.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Icons\settings_red_gear.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Resource Include="Image\logo_ulinx.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
